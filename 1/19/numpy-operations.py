@@ -16,3 +16,5 @@ print(arr<arr2) #all matrix operations
 print(arr + np.array([5])) 
 
 print(arr+np.array([5,4,3])) #5, 4, 3 added to original. Can add things to shape if they can be made to add to shape
+
+#Numpy is based on APL
