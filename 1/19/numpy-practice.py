@@ -69,7 +69,7 @@ arr9a = arr9.reshape(-1)
 print(arr9a)
 print(arr9a.shape)
 
-arr9b = arr9.rehsape((3, -1))  # google
+arr9b = arr9.reshape((3, -1))  # google
 print(arr9b)
 print(arr9b.shape)
 
