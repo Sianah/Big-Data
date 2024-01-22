@@ -105,7 +105,8 @@ print(arr9c)
 arr9T = arr9.T #.T means transpose
 print(arr9T)
 
-#Finally, the transposed array arr9T is saved to a file
+#Finally, the transposed array arr9T is saved to a file named arr.npy. 
+#It is then loaded back into a new variable arr10.
 #loading and saving
 with open("arr.npy","wb") as f: #wb is to write to it
     np.save(f, arr9T)    #save(f, what you want to save)
