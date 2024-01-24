@@ -45,7 +45,7 @@ console.rule()
 arr = np.array([[4,7,9],[2,3,5]])
 print("arr (shape %s) = "% str(arr.shape))
 print(arr)
-arr2 = np.array([2]) #broadcasting has to use a one. i.e [[2],[3]]
+arr2 = np.array([[[2], [3]]]) #broadcasting has to use a one. i.e [[2],[3]]. For [[[2], [3]]], the shape is (1,2,1)
 print("arr2 (shape %s) = "% str(arr2.shape))
 # print("arr2 = ")
 print(arr2)
