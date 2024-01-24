@@ -42,11 +42,12 @@ print(arr+np.array([5, 4, 3])) #adds [5 4 3] to each row
 #1/24 notes
 console.rule()
 
-arr = np.array([4,7,9])
-print("arr =")
+arr = np.array([[4,7,9],[2,3,5]])
+print("arr (shape %s) = "% str(arr.shape))
 print(arr)
-arr2 = np.array([2])
-print("arr2 = ")
+arr2 = np.array([2]) #broadcasting has to use a one. i.e [[2],[3]]
+print("arr2 (shape %s) = "% str(arr2.shape))
+# print("arr2 = ")
 print(arr2)
 print("arr2 broadcasted to arr shape =")
 print(arr2+np.zeros(arr.shape))
