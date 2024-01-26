@@ -13,11 +13,11 @@ print(student_scores.mean(axis = 1))
 #Task 3: Compute the global mean score
 print("Global mean score: ")
 print(student_scores.mean())
+
 #Task 4: Drop the lowest assignment grade for each student, then compute their mean assignment score
 print("Mean score of each student after lowest assignment grade is dropped: ")
-arr2 = student_scores.min(axis=0)
-arr3 = student_scores-arr2
-print(arr3)
+print(np.mean(np.sort(student_scores,axis=0)[1:],axis=0))#doing this in python with loops is slow
+
 #Task 5: Report the average scores of the top-3 assignments in which the students performed best on average
 print("Average score of top three assignments: ")
-assignment_average = student_scores.mean(axis = 1)
+assignment_average = student_scores.mean(axis = 1)#try to do this one over the weekend before Monday
