@@ -20,4 +20,6 @@ print(np.mean(np.sort(student_scores,axis=0)[1:],axis=0))#doing this in python w
 
 #Task 5: Report the average scores of the top-3 assignments in which the students performed best on average
 print("Average score of top three assignments: ")
-assignment_average = student_scores.mean(axis = 1)#try to do this one over the weekend before Monday
+print(student_scores.mean(axis=1))#try to do this one over the weekend before Monday
+
+
