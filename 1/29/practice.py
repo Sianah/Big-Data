@@ -28,11 +28,23 @@ print("Average score of top three assignments: ")
 print(np.sort(student_scores.mean(axis=1))[7:10][::-1])
 
 #Task 6: Compute a curved score for each assignment and each student:
-#i.e. take ach student and each assignment and divide the student's assignment
+#i.e. take each student and each assignment and divide the student's assignment
 #score by the max score for that assignment across all students
+#first: find the max score for each assignment
+#second: print off each student score
 #(new scores will be between 0 and 1; rescale them)
+print("Curved score for each student: ")
+print(student_scores.max(axis=1))
 
-#Task 7: Count the number of assignments where at least one student got a 90 or above
+#Task 7: Count the number of assignments where at least one student got a 75 or above
+#if two students have the same number on assignment, it just counts as one
+print("Number of assignment where one student got 90 or above: ")
+#first: find the max for each assignment
+#second: print off values that are 90 or above
+#third: print them off as indeces instead of numbers
+#fourth: print off last index
+print(student_scores[student_scores>=75])
+print(np.shape(student_scores[student_scores>=75]))
 
 #Task 8: Compute how similar each student is to every other: each student is a vector
 # of assignment scores, so take each student and compute the euclidean distance
