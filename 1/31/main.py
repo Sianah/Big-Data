@@ -21,9 +21,9 @@ df_finaid = pd.read_csv(filepath_or_buffer="sfa2122.csv",encoding='latin1')
 df_finaid_dictionary = pd.read_excel("sfa2122.xlsx",sheet_name="varlist")
 print(df_finaid)
 print(df_finaid_dictionary)
-stetson_finaid = df_finaid[stetson['UNITID'] == df_finaid['UNITID']]#.iloc[0] #iloc = index location
+stetson_finaid = df_finaid[stetson['UNITID'].iloc[0] == df_finaid['UNITID']]#.iloc[0] #iloc = index location
 # print(stetson_finaid.to_dict())
 stetson_finaid_newkeys = {}
 for key in stetson_finaid:
-    new_key = df_finaid_dictionary[df_finaid_dictionary['varname'] == key]['varTitle']#.iloc[0]
+    new_key = df_finaid_dictionary[df_finaid_dictionary['varname'] == key]['varTitle'].iloc[0]
     stetson_finaid_newkeys[new_key] = stetson_finaid[key]
