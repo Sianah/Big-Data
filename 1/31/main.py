@@ -23,7 +23,7 @@ df_finaid_dictionary = pd.read_excel(io="sfa2122.xlsx", sheet_name="varlist")
 print(df_finaid)
 print(df_finaid_dictionary)
 stetson_finaid = df_finaid[stetson['UNITID'].iloc[0] ==
-                           df_finaid['UNITID']].iloc[0] #iloc = index location
+                           df_finaid['UNITID']].iloc[0]  # iloc = index location
 # print(stetson_finaid.to_dict())
 stetson_finaid_newkeys = {}
 for key in stetson_finaid:
