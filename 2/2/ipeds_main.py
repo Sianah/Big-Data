@@ -37,13 +37,13 @@ rich.print(fl_univ.loc[651])  # pulls out data from that row
 fl_univ.index = fl_univ['INSTNM']
 rich.print(fl_univ)
 rich.print(fl_univ.loc['Stetson University'])
-#remember, iloc always needs a number. Loc does not. iloc takes row integer, loc takes name
+# remember, iloc always needs a number. Loc does not. iloc takes row integer, loc takes name
 # rich.print(fl_univ ['Stetson University']) #Would look for a column named stetson university
-rich.print(fl_univ.at['Stetson University','ADDR']) #will gather street address of stetson. At will isolate row column
+# will gather street address of stetson. At will isolate row column
+rich.print(fl_univ.at['Stetson University', 'ADDR'])
 
-rich.print(fl_univ.describe())#takes every column, counts records
-rich.print(fl_univ[['ADDR','CITY']].count())
-
+rich.print(fl_univ.describe())  # takes every column, counts records
+rich.print(fl_univ[['ADDR', 'CITY']].count())
 
 
 # df_finaid = pd.read_csv("sfa2122.csv", encoding='latin1')
