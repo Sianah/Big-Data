@@ -1,0 +1,35 @@
+2/12/2024 notes
+
+Plot can have a single value
+
+i.e. Trip distance
+ - Histogram or Density graph
+ - Histogram (y-axis: count(how many trips), x-axis: miles)
+ - Density(y-axis: , x-axis: miles)
+ - Histogram is only for one value, not multiple
+
+For multiple values:
+ - Can use a bar chart for discrete values
+ - Discrete means no fractions. Can have 1 or 2 or 3 things. Continuous can have fractions
+ - Even scatter plot can be bad for discrete
+
+For scatter plot:
+ - x-axis: total fare, y-axis: distance traveled --> good example for scatter plot. Are continous values
+
+For line chart:
+ - x - axis: count , y-axis: each day of september
+
+For radar graph:
+ - multiple dimensions that are being compared
+
+For heatmap:
+ - 2D version of histograms
+ - think of it like checkered boxes where some get filled/colored in
+
+Geographic heatmap:
+ - Think of heatmap but in the shape of the United States
+
+
+
+
+
